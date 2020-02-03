@@ -1,23 +1,28 @@
-<table class="table">
-  <thead class="thead-dark">
-  <tr>
-  <th> ID</th>
-  <th>title</th>
-  <th>source</th>
- 
-  <th>link</th>
-  
-  </tr>
-  </thead>
-  
-<% @wechats.each do |wechat| %>
-  <tr>
-    <td><%= wechat.juhe_id %></td>
-    <td><%= wechat.title %></td>
-    <td><%= wechat.source %></td>
-
-    <td><a href="<%=wechat.url %>" > Visit 11</a></td>
+<div class="panel panel-success">
+  <div class="panel-heading  text-center">Wechat go go go</div>
+  <div class="panel-body">
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+    <th> ID</th>
+    <th>title</th>
+    <th>source</th>
+   
+    <th>link</th>
     
-  </tr>
-<% end %>
-</table>
+    </tr>
+    </thead>
+    
+  <% @wechats.each do |wechat| %>
+    <tr>
+      <td><%= wechat.juhe_id %></td>
+      <td><%= wechat.title %></td>
+      <td><%= wechat.source %></td>
+  
+      <td><a href="<%=wechat.url %>" > Visit </a></td>
+      
+    </tr>
+  <% end %>
+  </table>
+  </div>
+</div>
